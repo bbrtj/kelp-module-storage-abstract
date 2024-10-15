@@ -1,0 +1,5 @@
+[PerlTidy]
+select = **/*.{pl,pm,t}
+ignore = Kelp-Module-Storage-Abstract*/**/*.{pl,pm,t}
+argv = -pro=./.perltidyrc --character-encoding=none
+
