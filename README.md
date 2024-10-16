@@ -1,5 +1,5 @@
 # Kelp::Module::Storage::Abstract
-A integrating Storage::Abstract with Kelp.
+A module integrating Storage::Abstract with Kelp.
 
 ## Code and documentation
 [Kelp::Module::Storage::Abstract on CPAN](https://metacpan.org/release/Kelp-Module-Storage-Abstract)
