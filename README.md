@@ -1,5 +1,5 @@
 # Kelp::Module::Storage::Abstract
-A Perl module for blah blah blah
+A integrating Storage::Abstract with Kelp.
 
 ## Code and documentation
 [Kelp::Module::Storage::Abstract on CPAN](https://metacpan.org/release/Kelp-Module-Storage-Abstract)
@@ -15,5 +15,4 @@ bigger so we can talk it through.
 
 ### Author
 Bartosz Jarzyna <bbrtj.pro@gmail.com>
-
 
