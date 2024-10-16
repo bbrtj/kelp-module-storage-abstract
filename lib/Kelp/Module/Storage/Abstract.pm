@@ -107,7 +107,9 @@ and each value is a storage path from which the files will be served. If you wri
 		'/public' => '/',
 	},
 
-Then it will be possible to access to all files from your storage through C</public> route.
+Then it will be possible to access to all files from your storage through
+C</public> route. A L<Plack::App::Storage::Abstract> instance will be set up on
+each of these routes.
 
 This route will be given a name corresponding to its url, with slashes replaced
 with underscores and C<storage_> prepended. So the route above will be named
