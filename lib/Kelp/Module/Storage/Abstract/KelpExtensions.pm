@@ -19,7 +19,8 @@ sub Kelp::Response::render_file
 
 	try {
 		$fh = $app->storage->retrieve($filename, \%info);
-	} catch {
+	}
+	catch {
 		$e = $_;
 	};
 

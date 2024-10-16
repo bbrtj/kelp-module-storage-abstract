@@ -10,12 +10,14 @@ use HTTP::Request::Common;
 my $app = Kelp->new(mode => 'test');
 my $t = Kelp::Test->new(app => $app);
 
-$app->add_route('/stored_file' => {
-	to => sub {
-		my ($self) = @_;
-		$self->res->render_file('f1');
+$app->add_route(
+	'/stored_file' => {
+		to => sub {
+			my ($self) = @_;
+			$self->res->render_file('f1');
+		}
 	}
-});
+);
 
 subtest 'should be usable from app object' => sub {
 	ok $app->can('storage'), 'app can invoke storage ok';

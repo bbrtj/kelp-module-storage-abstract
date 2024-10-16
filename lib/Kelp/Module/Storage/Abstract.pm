@@ -40,11 +40,13 @@ sub build
 			encoding => $app->charset,
 		);
 
-		$app->add_route($key => {
-			to => $plack_app->to_app,
-			name => $name,
-			psgi => 1,
-		});
+		$app->add_route(
+			$key => {
+				to => $plack_app->to_app,
+				name => $name,
+				psgi => 1,
+			}
+		);
 	}
 
 	$self->register(storage => $storage);
